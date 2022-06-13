@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;500&display=swap');
+
+/*
+div {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+*/
+
+.leftColumn{
+    width: 50%;
+    /* float: left; */
+    text-align: center;
+}
+.rightColumn {
+    width: 50%;
+    /* float: right; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainBox{
+    display: flex;
+}
+
+body {
+    background-color: #175aac;
+    font-family: 'Roboto', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.rightColumn h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+}
+
+.rightColumn h1 div {
+    color: #fea300;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+.rightColumn p {
+    color: white;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.rightColumn button {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gainsboro;
+
+    color: white;
+    text-transform: lowercase;
+    background-color: #54991e;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    width: 175px;
+
+    border-radius: 20px;
+    text-align: left;
+    
+}

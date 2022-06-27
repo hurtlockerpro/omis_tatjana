@@ -1,0 +1,59 @@
+
+body {
+    background-color: rgb(227, 227, 227);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* view height */
+    overflow: hidden;
+}
+
+.loginBox{
+    width: 750px;
+    height: 550px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(171, 171, 171) ;
+    border-radius: 15px;
+    
+    -webkit-box-shadow: 2px 8px 15px 3px rgba(0,0,0,0.5); 
+    box-shadow: 2px 8px 15px 3px rgba(0,0,0,0.5);
+
+    background-color: white;
+
+    display: flex;
+
+}
+
+.leftColumn{
+    width: 50%;
+    text-align: center;
+}
+
+.leftColumn img {
+    width: 75%;
+}
+
+.leftColumn a{
+    color: black;
+}
+
+.rightColumn{
+    width: 50%;
+}
+
+/* FORM ELEMENTS */
+
+.rightColumn form div .fa-user {}
+.rightColumn form div input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid gray;
+    padding-left: 35px;
+}
+.rightColumn form div {}
+
+.rightColumn form div .fa-lock {}

@@ -46,14 +46,56 @@ body {
 
 /* FORM ELEMENTS */
 
-.rightColumn form div .fa-user {}
+.rightColumn form div .fa-user {
+    position: absolute;
+    left: 10px;
+}
 .rightColumn form div input {
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid gray;
     padding-left: 35px;
+    outline: none;
 }
-.rightColumn form div {}
+.rightColumn form div {
+    position: relative;
+    margin: 20px;
+}
 
-.rightColumn form div .fa-lock {}
+.rightColumn form div::before {
+    content: 'hello';
+}
+
+
+.rightColumn form div .fa-lock {
+    position: absolute;
+    left: 10px;
+}
+
+/* TMP */
+.parent {
+    display: block;
+    width: 500px;
+    height: 300px;
+    border: 1px solid red;
+     position: relative;
+}
+.box{
+    border: 1px solid green;
+    margin: 5px;
+    height: 25px;
+    position: relative;
+    
+}
+
+.box1{
+    top: 25px;
+    left: -25px;
+    background-color: aliceblue;
+    z-index: 1;
+    position: absolute;
+}
+.box2{
+    background-color: aquamarine;
+}

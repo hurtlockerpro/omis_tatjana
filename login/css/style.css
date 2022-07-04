@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
 body {
     background-color: rgb(227, 227, 227);
     
@@ -7,11 +9,12 @@ body {
     align-items: center;
     min-height: 100vh; /* view height */
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 .loginBox{
-    width: 750px;
-    height: 550px;
+    width: 700px;
+    height: 450px;
 
     border-width: 3px;
     border-style: solid;
@@ -30,10 +33,17 @@ body {
 .leftColumn{
     width: 50%;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
 .leftColumn img {
-    width: 75%;
+    width: 80%;
 }
 
 .leftColumn a{
@@ -42,6 +52,10 @@ body {
 
 .rightColumn{
     width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* FORM ELEMENTS */
@@ -60,12 +74,10 @@ body {
 }
 .rightColumn form div {
     position: relative;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.rightColumn form div::before {
-    content: 'hello';
-}
 
 
 .rightColumn form div .fa-lock {
@@ -98,4 +110,63 @@ body {
 }
 .box2{
     background-color: aquamarine;
+}
+
+
+/* pseudo class */ 
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btnLogIn {
+    color: white;
+    text-transform: capitalize;
+    background-color: #6eade3;
+    width: 75px;
+    height: 35px; 
+
+    border-width: 1px;
+    border-color: #466e91;
+    border-style: solid;
+    border-radius: 4px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btnFacebook{
+    color: #385c98;
+    font-size: 22px;
+}
+.btnTwitter{
+    color: #21a1f0;
+    font-size: 22px;
+}
+.btnGoogle{
+    color: #f0283a;
+    font-size: 22px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+/*
+.lastRowInColumn{
+    position: absolute;
+    bottom: 50px;
+}*/
+
+.child {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
